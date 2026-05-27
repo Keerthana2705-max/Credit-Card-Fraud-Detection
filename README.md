@@ -84,12 +84,6 @@ These columns were removed to simplify analysis and improve model performance.
 
 The dataset was downloaded from Kaggle and loaded into Python using the Pandas library.
 
-```python
-import pandas as pd
-
-df = pd.read_csv("creditcard.csv")
-```
-
 ## 6.2 Data Cleaning and Preprocessing
 
 The following preprocessing steps were performed:
@@ -99,10 +93,6 @@ The following preprocessing steps were performed:
 * Verified data types
 * Prepared dataset for analysis
 
-```python
-df.isnull().sum()
-df = df.drop_duplicates()
-```
 
 ## 6.3 Descriptive Statistics
 
@@ -114,12 +104,6 @@ Statistical analysis was performed to understand transaction behavior.
 * Fraud vs normal transaction count
 * Transaction distribution
 * Feature variation analysis
-
-```python
-print(df.describe())
-```
-
----
 
 # 7. Exploratory Data Analysis (EDA)
 
@@ -157,8 +141,6 @@ A correlation heatmap was generated to identify relationships among features.
 
 Some anonymized features showed strong correlation with fraud transactions.
 
----
-
 # 8. Data Visualization
 
 Different visualizations were used for better understanding of transaction patterns.
@@ -185,8 +167,6 @@ Used to detect outliers in transaction amounts.
 
 Used to visualize feature correlations.
 
----
-
 # 9. Risk Analysis
 
 Transactions were categorized into risk levels based on transaction amount.
@@ -202,9 +182,6 @@ Transactions were categorized into risk levels based on transaction amount.
 ### Purpose
 
 This classification helps identify suspicious transactions more effectively.
-
----
-
 # 10. Predictive Modeling
 
 ## 10.1 Linear Regression
@@ -223,33 +200,10 @@ Linear Regression was used to analyze transaction trends and relationships.
 ## 10.2 Model Training
 
 The dataset was divided into training and testing sets.
-
-```python
-from sklearn.model_selection import train_test_split
-
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42
-)
-```
-
 The model was trained using Linear Regression.
-
-```python
-from sklearn.linear_model import LinearRegression
-
-model = LinearRegression()
-model.fit(X_train, y_train)
-```
-
 ## 10.3 Prediction
 
 The trained model was used to predict transaction trends.
-
-```python
-y_pred = model.predict(X_test)
-```
-
----
 
 # 11. Model Evaluation
 
@@ -263,18 +217,9 @@ Measures how well the model explains variation in data.
 
 Measures prediction error.
 
-```python
-from sklearn.metrics import r2_score, mean_squared_error
-
-r2 = r2_score(y_test, y_pred)
-mse = mean_squared_error(y_test, y_pred)
-```
-
 ### Observation
 
 The evaluation metrics help determine prediction accuracy and model performance.
-
----
 
 # 12. Dashboard Visualization
 
@@ -304,7 +249,6 @@ Displays low, medium, and high-risk transactions.
 * Interactive filtering
 * Zoom and hover analysis
 
----
 
 # 13. Results and Findings
 
@@ -316,8 +260,6 @@ The analysis produced the following findings:
 4. High-risk transactions can be identified using transaction patterns.
 5. Visual dashboards improve fraud analysis and decision-making.
 
----
-
 # 14. Advantages of the Project
 
 * Helps identify suspicious transactions quickly
@@ -326,15 +268,12 @@ The analysis produced the following findings:
 * Supports data-driven decision making
 * Enhances customer trust and security
 
----
 
 # 15. Limitations
 
 * Dataset is highly imbalanced
 * Linear Regression may not provide high fraud classification accuracy
 * Real-time fraud detection requires more advanced machine learning models
-
----
 
 # 16. Future Enhancements
 
@@ -347,8 +286,6 @@ Future improvements can include:
 * Automated alert generation
 * Fraud probability scoring system
 
----
-
 # 17. Conclusion
 
 This project successfully analyzed credit card transaction data using Exploratory Data Analysis, Linear Regression, and Dashboard Visualization techniques.
@@ -356,7 +293,3 @@ This project successfully analyzed credit card transaction data using Explorator
 The study helped identify fraud patterns, transaction behaviors, and high-risk activities. Data visualization and statistical analysis provided valuable insights into fraud detection.
 
 Although Linear Regression has limitations for fraud classification, the project demonstrates how data analysis and visualization can support fraud prevention strategies in financial systems.
-
-The project can be further enhanced using advanced machine learning techniques and real-time monitoring systems.
-5. Seaborn Documentation
-   [https://seaborn.pydata.org/](https://seaborn.pydata.org/)
