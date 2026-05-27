@@ -39,16 +39,7 @@ This project focuses on Exploratory Data Analysis (EDA), Linear Regression, and 
 9. Create an interactive dashboard using Plotly.<br>
 10. Generate insights to support fraud prevention.<br>
 
-4. Dataset Description
 
-## Dataset Source
-
-Dataset Name: Credit Card Fraud Detection Dataset
-
-Dataset Source: Kaggle
-
-Dataset Link:
-[https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 
 ## Dataset Features
 
