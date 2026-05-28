@@ -150,22 +150,32 @@ Different visualizations were used for better understanding of transaction patte
 ### 1. Bar Chart
 
 Used to display fraud vs normal transaction distribution.
+<img width="703" height="487" alt="Screenshot 2026-05-28 200019" src="https://github.com/user-attachments/assets/f013dcaf-eb0b-481e-82f8-b998116b651f" />
+
 
 ### 2. Histogram
 
 Used to analyze transaction amount distribution.
+<img width="865" height="586" alt="image" src="https://github.com/user-attachments/assets/d0f80386-ae93-49aa-8db3-6a28e6c07b43" />
+
 
 ### 3. Scatter Plot
 
 Used to visualize relationships between time and transaction amount.
+<img width="897" height="587" alt="image" src="https://github.com/user-attachments/assets/e62f6627-4899-4c02-b865-8839ebda854d" />
+
 
 ### 4. Box Plot
 
 Used to detect outliers in transaction amounts.
+<img width="705" height="497" alt="image" src="https://github.com/user-attachments/assets/38d1fd22-b478-4e30-91d0-a7148e4afae5" />
+
 
 ### 5. Heatmap
 
 Used to visualize feature correlations.
+<img width="1088" height="876" alt="image" src="https://github.com/user-attachments/assets/14aab97c-5380-4734-b1c7-aa3ccd86e571" />
+
 
 # 9. Risk Analysis
 
@@ -212,10 +222,12 @@ The model performance was evaluated using:
 ## 11.1 R² Score
 
 Measures how well the model explains variation in data.
+R2 Score: 0.00015552801701912422
 
 ## 11.2 Mean Squared Error (MSE)
 
 Measures prediction error.
+Mean Squared Error: 58643.98795669793
 
 ### Observation
 
